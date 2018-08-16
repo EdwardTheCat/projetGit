@@ -11,15 +11,39 @@
     <fieldset>
     <legend><h1>Nous contacter</h1></legend>
     <form action="#" method="post">
-        <label for="nom"></label>
-        <input type="text" name="nom" placeholder="Nom">
-        <label for="prenom"></label>
-        <input type="text" name="prenom" placeholder="Prenom">
-
-        <label for="email"></label>
-        <input type="email" name="email" placeholder="Email">
-
-        <input type="submit" value="Envoyer">
+        <p>
+            <input type="text" name="nom" placeholder="Nom">
+        </p>
+        <p>
+            <input type="text" name="prenom" placeholder="Prenom">
+        </p>
+        <p>
+            <input type="email" name="email" placeholder="Email">
+        </p>
+        
+        <p>
+        <label for="status">Je suis...</label>
+        <select name="status">
+            <option value="business"> une entreprise</option> 
+            <option value="particular" selected> un particulier</option>
+        </select>
+        </p>
+        <p>
+        <label for="why">Raison du contact:</label>
+        <select name="why">
+            <option value="information" selected> Demander une information</option> 
+            <option value="monney">Faire un don</option>
+            <option value="job">Déposer une offre d'emploi</option> 
+            <option value="other">Autre</option>
+        </select>
+        </p>
+        <p>
+            <input type="textarea" name="text" placeholder="Votre message">
+        </p>
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+        
     </form>
     </fieldset>
 </body>
